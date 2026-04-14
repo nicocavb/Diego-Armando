@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: bebas neue;
+    text-decoration: underline;
+    font-size: 4rem;
+    text-align: center;
+    background-color: rgba(132, 141, 141, 0.495);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 100px;
+
+}
+.subtitulo1 {
+    color: rgb(2, 2, 2);
+    text-decoration-line: none;
+    padding: 2rem;
+    background-color:rgba(4, 4, 4, 0.4);
+    border-radius: 100px;
+    
+}
+.img1 {
+    width:100vh ;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+}
+footer {
+    color: rgb(81, 80, 80);
+    padding: 2rem;
+}
+.logo {
+    width: 5vh;
+    height: auto;
+    padding: auto;
+}
+body{
+    background-image: url(../assets/56D2D70D-6760-42E4-A50B-BCB2CD18AE4C.png);
+    
+}
+.parrafo1{
+    color: rgb(11, 11, 11);
+    text-shadow:16px 16px 16px  rgb(255, 255, 255);
+    font-size: 1rem;
+    font-family: inter ;
+    font-weight:bolder;
+    font-style: normal ;
+    padding: 1rem;
+    background: linear-gradient(transparent
+    rgba(0, 0, 0, 0));
+
+
+
+
+}
+.categorias{
+    font-size: 1.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    gap: 200px;
+
+
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    border-radius: 1000px;
+}
+.cat{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: row;
+}
+.menu{
+    justify-content: space-around;
+}
