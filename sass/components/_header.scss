@@ -1,0 +1,23 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+
+
+ .titulo {
+  font-family: v.$fuentePrincipal;
+  text-decoration: underline;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1000px;
+  text-align: center; // centra el texto
+
+
+    @include m.tablet{
+    height: auto;
+}
+@include m.mobile{
+    height: auto;
+}
+}
+
+

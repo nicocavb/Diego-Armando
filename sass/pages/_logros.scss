@@ -1,0 +1,52 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.logros {
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  // subtítulo ya lo tenés definido como subtitulo1
+  .lista-logros {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-family: v.$fuenteSecundaria;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+      padding: 0.8rem 1rem;
+      border-left: 4px solid #8aa6a6; // barra lateral elegante
+      background: #fff;
+      border-radius: 6px;
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        transform: translateX(5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      }
+    }
+  }
+
+  // responsive
+  @include m.tablet {
+    .lista-logros li {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  @include m.mobile {
+    .lista-logros li {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      padding: 0.6rem;
+    }
+  }
+}
